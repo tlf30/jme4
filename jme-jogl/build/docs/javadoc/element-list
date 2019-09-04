@@ -1,0 +1,5 @@
+com.jme.audio.joal
+com.jme.input.jogl
+com.jme.opencl.jocl
+com.jme.renderer.jogl
+com.jme.system.jogl

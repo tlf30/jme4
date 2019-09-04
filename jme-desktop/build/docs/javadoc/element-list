@@ -1,0 +1,11 @@
+com.jme.app
+com.jme.app.state
+com.jme.cursors.plugins
+com.jme.input
+com.jme.input.awt
+com.jme.system
+com.jme.system.awt
+com.jme.texture.plugins
+com.jme.util
+jme3tools.converters
+jme3tools.navigation

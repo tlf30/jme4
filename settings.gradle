@@ -4,41 +4,37 @@
 rootProject.name = 'jmonkeyengine'
 
 // Core classes, should work on all java platforms
-include 'jme3-core'
-include 'jme3-effects'
-include 'jme3-networking'
-include 'jme3-plugins'
-include 'jme3-terrain'
+include 'jme-core'
+include 'jme-effects'
+include 'jme-networking'
+include 'jme-plugins'
+include 'jme-terrain'
 
 // Desktop dependent java classes
-include 'jme3-desktop'
-include 'jme3-blender'
-include 'jme3-jogl'
-include 'jme3-lwjgl'
-if (JavaVersion.current().isJava8Compatible()) {
-    include 'jme3-lwjgl3'
-    include 'jme3-vr'
-}
+include 'jme-desktop'
+include 'jme-blender'
+include 'jme-jogl'
+include 'jme-lwjgl3'
+include 'jme-vr'
 
 // Other external dependencies
-include 'jme3-jbullet'
-include 'jme3-niftygui'
-include 'jme3-jogg'
-include 'jme3-android'
-include 'jme3-ios'
+include 'jme-niftygui'
+include 'jme-jogg'
+include 'jme-android'
+include 'jme-ios'
 
 //native builds
-include 'jme3-bullet' //java
-include 'jme3-bullet-native' //cpp
-include 'jme3-bullet-native-android' //cpp
-include 'jme3-android-native' //cpp
+include 'jme-bullet' //java
+include 'jme-bullet-native' //cpp
+include 'jme-bullet-native-android' //cpp
+include 'jme-android-native' //cpp
 
 // Test Data project
-include 'jme3-testdata'
+include 'jme-testdata'
 
 // Example projects
-include 'jme3-examples'
+include 'jme-examples'
 
 if(buildAndroidExamples == "true"){
-    include 'jme3-android-examples'
+    include 'jme-android-examples'
 }

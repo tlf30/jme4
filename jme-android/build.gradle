@@ -1,0 +1,9 @@
+if (!hasProperty('mainClass')) {
+    ext.mainClass = ''
+}
+
+dependencies {
+    compile project(':jme-core')
+    compile project(':jme-plugins')
+    compileOnly 'android:android'
+}

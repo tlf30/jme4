@@ -1,0 +1,20 @@
+if (!hasProperty('mainClass')) {
+    ext.mainClass = ''
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/ogre/java'
+            srcDir 'src/gltf/java'
+            srcDir 'src/fbx/java'
+            srcDir 'src/xml/java'
+        }
+    }
+}
+
+dependencies {
+    compile project(':jme-core')
+    compile 'com.google.code.gson:gson:2.8.1'
+    testCompile project(':jme-desktop')
+}

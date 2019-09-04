@@ -1,0 +1,15 @@
+-Xdoclint:none '-quiet'
+-author 
+-charset 'UTF-8'
+-classpath 'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-jogg\\build\\classes\\java\\main;C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-jogg\\build\\resources\\main;C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-core\\build\\libs\\jme-core-4.0.0-SNAPSHOT.jar;C:\\Users\\tlfal_000\\.gradle\\caches\\modules-2\\files-2.1\\de.jarnbjo\\j-ogg-all\\1.0.0\\c74a3afb9ec805502baf9d0f0f15d7adaf84088b\\j-ogg-all-1.0.0.jar'
+-d 'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-jogg\\build\\docs\\javadoc'
+-doctitle 'jMonkeyEngine 4.0 jme-jogg Javadoc'
+-encoding 'UTF-8'
+-header '<b>jMonkeyEngine 4.0 jme-jogg</b>'
+-protected 
+-quiet 
+-use 
+-windowtitle 'jMonkeyEngine 4.0 jme-jogg Javadoc'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-jogg\\src\\main\\java\\com\\jme\\audio\\plugins\\CachedOggStream.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-jogg\\src\\main\\java\\com\\jme\\audio\\plugins\\OGGLoader.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-jogg\\src\\main\\java\\com\\jme\\audio\\plugins\\UncachedOggStream.java'

@@ -1,0 +1,48 @@
+Manifest-Version: 1.0
+Implementation-Title: jMonkeyEngine
+Implementation-Version: 4.0-6876
+Main-Class: jmetest.TestChooser
+Class-Path: lib/jme-blender.jar lib/jme-jogl.jar lib/jme-lwjgl3.jar lib/
+ jme-desktop.jar lib/jme-effects.jar lib/jme-bullet-native.jar lib/jme-b
+ ullet.jar lib/jme-jogg.jar lib/jme-networking.jar lib/jme-niftygui.jar 
+ lib/jme-plugins.jar lib/jme-terrain.jar lib/jme-core.jar lib/jme-testda
+ ta.jar lib/simple.jar lib/dense64.jar lib/denseC64.jar lib/core.jar lib
+ /j-ogg-all.jar lib/gluegen-rt-main.jar lib/jogl-all-main.jar lib/joal-m
+ ain.jar lib/jocl-main.jar lib/lwjgl-glfw.jar lib/lwjgl-glfw-natives-win
+ dows.jar lib/lwjgl-glfw-natives-linux.jar lib/lwjgl-glfw-natives-macos.
+ jar lib/lwjgl-jemalloc.jar lib/lwjgl-jemalloc-natives-windows.jar lib/l
+ wjgl-jemalloc-natives-linux.jar lib/lwjgl-jemalloc-natives-macos.jar li
+ b/lwjgl-openal.jar lib/lwjgl-openal-natives-windows.jar lib/lwjgl-opena
+ l-natives-linux.jar lib/lwjgl-openal-natives-macos.jar lib/lwjgl-opencl
+ .jar lib/lwjgl-opengl.jar lib/lwjgl-opengl-natives-windows.jar lib/lwjg
+ l-opengl-natives-linux.jar lib/lwjgl-opengl-natives-macos.jar lib/lwjgl
+ .jar lib/lwjgl-natives-windows.jar lib/lwjgl-natives-linux.jar lib/lwjg
+ l-natives-macos.jar lib/nifty-default-controls.jar lib/nifty.jar lib/ni
+ fty-style-black.jar lib/gson.jar lib/nifty-examples.jar lib/gluegen-rt.
+ jar lib/gluegen-rt-natives-android-aarch64.jar lib/gluegen-rt-natives-a
+ ndroid-armv6.jar lib/gluegen-rt-natives-linux-amd64.jar lib/gluegen-rt-
+ natives-linux-armv6.jar lib/gluegen-rt-natives-linux-armv6hf.jar lib/gl
+ uegen-rt-natives-linux-i586.jar lib/gluegen-rt-natives-macosx-universal
+ .jar lib/gluegen-rt-natives-solaris-amd64.jar lib/gluegen-rt-natives-so
+ laris-i586.jar lib/gluegen-rt-natives-windows-amd64.jar lib/gluegen-rt-
+ natives-windows-i586.jar lib/jogl-all.jar lib/jogl-all-natives-android-
+ aarch64.jar lib/jogl-all-natives-android-armv6.jar lib/jogl-all-natives
+ -linux-amd64.jar lib/jogl-all-natives-linux-armv6.jar lib/jogl-all-nati
+ ves-linux-armv6hf.jar lib/jogl-all-natives-linux-i586.jar lib/jogl-all-
+ natives-macosx-universal.jar lib/jogl-all-natives-solaris-amd64.jar lib
+ /jogl-all-natives-solaris-i586.jar lib/jogl-all-natives-windows-amd64.j
+ ar lib/jogl-all-natives-windows-i586.jar lib/joal.jar lib/joal-natives-
+ android-aarch64.jar lib/joal-natives-android-armv6.jar lib/joal-natives
+ -linux-amd64.jar lib/joal-natives-linux-armv6.jar lib/joal-natives-linu
+ x-armv6hf.jar lib/joal-natives-linux-i586.jar lib/joal-natives-macosx-u
+ niversal.jar lib/joal-natives-solaris-amd64.jar lib/joal-natives-solari
+ s-i586.jar lib/joal-natives-windows-amd64.jar lib/joal-natives-windows-
+ i586.jar lib/jocl.jar lib/jocl-natives-android-aarch64.jar lib/jocl-nat
+ ives-android-armv6.jar lib/jocl-natives-linux-amd64.jar lib/jocl-native
+ s-linux-armv6.jar lib/jocl-natives-linux-armv6hf.jar lib/jocl-natives-l
+ inux-i586.jar lib/jocl-natives-macosx-universal.jar lib/jocl-natives-so
+ laris-amd64.jar lib/jocl-natives-solaris-i586.jar lib/jocl-natives-wind
+ ows-amd64.jar lib/jocl-natives-windows-i586.jar lib/nifty-default-contr
+ ols.jar lib/nifty.jar lib/xpp3.jar lib/jsr305.jar lib/nifty-style-black
+ .jar lib/eventbus.jar lib/jglfont-core.jar
+

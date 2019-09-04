@@ -1,0 +1,27 @@
+-Xdoclint:none '-quiet'
+-author 
+-charset 'UTF-8'
+-classpath 'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\build\\classes\\java\\main;C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\build\\resources\\main;C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-plugins\\build\\libs\\jme-plugins-4.0.0-SNAPSHOT.jar;C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-core\\build\\libs\\jme-core-4.0.0-SNAPSHOT.jar;C:\\Users\\tlfal_000\\.gradle\\caches\\modules-2\\files-2.1\\com.google.code.gson\\gson\\2.8.1\\2a8e0aa38a2e21cb39e2f5a7d6704cbdc941da0\\gson-2.8.1.jar'
+-d 'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\build\\docs\\javadoc'
+-doctitle 'jMonkeyEngine 4.0 jme-ios Javadoc'
+-encoding 'UTF-8'
+-header '<b>jMonkeyEngine 4.0 jme-ios</b>'
+-protected 
+-quiet 
+-use 
+-windowtitle 'jMonkeyEngine 4.0 jme-ios Javadoc'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\src\\main\\java\\com\\jme\\audio\\ios\\IosAL.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\src\\main\\java\\com\\jme\\audio\\ios\\IosALC.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\src\\main\\java\\com\\jme\\audio\\ios\\IosEFX.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\src\\main\\java\\com\\jme\\input\\ios\\IosInputHandler.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\src\\main\\java\\com\\jme\\input\\ios\\IosTouchHandler.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\src\\main\\java\\com\\jme\\input\\ios\\TouchEventPool.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\src\\main\\java\\com\\jme\\renderer\\ios\\IosGL.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\src\\main\\java\\com\\jme\\renderer\\ios\\JmeIosGLES.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\src\\main\\java\\com\\jme\\system\\ios\\IGLESContext.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\src\\main\\java\\com\\jme\\system\\ios\\IosHarness.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\src\\main\\java\\com\\jme\\system\\ios\\IosImageLoader.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\src\\main\\java\\com\\jme\\system\\ios\\IosLogHandler.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\src\\main\\java\\com\\jme\\system\\ios\\JmeIosSystem.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\src\\main\\java\\com\\jme\\system\\ios\\ObjcNativeObject.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-ios\\src\\main\\java\\com\\jme\\util\\RingBuffer.java'

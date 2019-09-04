@@ -14,9 +14,9 @@ apply from: file('version.gradle')
 
 // This is applied to all sub projects
 subprojects {
-    if(!project.name.equals('jme3-android-examples')) {
+    if(!project.name.equals('jme-android-examples')) {
         apply from: rootProject.file('common.gradle')
-        if (!project.name.equals('jme3-testdata')) {
+        if (!project.name.equals('jme-testdata')) {
             apply from: rootProject.file('bintray.gradle')
         }
     } else {
@@ -24,8 +24,8 @@ subprojects {
     }
 }
 
-task run(dependsOn: ':jme3-examples:run') {
-    description = 'Run the jME3 examples'
+task run(dependsOn: ':jme-examples:run') {
+    description = 'Run the jme examples'
 }
 
 defaultTasks 'run'
@@ -82,12 +82,12 @@ task copyLibs(type: Copy){
     into "$buildDir/libDist/lib-ext" //buildDir.path + '/' + libsDirName + '/lib'
 }
 
-task dist(dependsOn: [':jme3-examples:dist', 'mergedJavadoc']){
-    description 'Creates a jME3 examples distribution with all jme3 binaries, sources, javadoc and external libraries under ./dist'
+task dist(dependsOn: [':jme-examples:dist', 'mergedJavadoc']){
+    description 'Creates a jme examples distribution with all jme binaries, sources, javadoc and external libraries under ./dist'
 }
 
 task mergedJavadoc(type: Javadoc, description: 'Creates Javadoc from all the projects.') {
-    title = 'jMonkeyEngine3'
+    title = 'jMonkeyEngine ' + jmeFullVersion
     destinationDir = mkdir("dist/javadoc")
 
     options.encoding = 'UTF-8'

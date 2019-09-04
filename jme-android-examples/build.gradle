@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    lintOptions {
+        // Fix nifty gui referencing "java.awt" package.
+        disable 'InvalidPackage'
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId "org.jmonkeyengine.jmeandroidexamples"
+        minSdkVersion 15       // Android 4.0.3 ICE CREAM SANDWICH
+        targetSdkVersion 22    // Android 5.1 LOLLIPOP
+        versionCode 1
+        versionName "1.0" // TODO: from settings.gradle
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            java {
+                srcDir 'src/main/java'
+            }
+            assets {
+                srcDir 'src/assets'
+                srcDir '../jme-testdata/src/main/resources'
+                srcDir '../jme-examples/src/main/resources'
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+
+    compile project(':jme-core')
+    compile project(':jme-android')
+    compile project(':jme-android-native')
+    compile project(':jme-effects')
+    compile project(':jme-bullet')
+    compile project(':jme-bullet-native-android')
+    compile project(':jme-networking')
+    compile project(':jme-niftygui')
+    compile project(':jme-plugins')
+    compile project(':jme-terrain')
+    compile fileTree(dir: '../jme-examples/build/libs', include: ['*.jar'], exclude: ['*sources*.*'])
+//    compile project(':jme-examples')
+}

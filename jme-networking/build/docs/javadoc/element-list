@@ -1,0 +1,15 @@
+com.jme.network
+com.jme.network.base
+com.jme.network.kernel
+com.jme.network.kernel.tcp
+com.jme.network.kernel.udp
+com.jme.network.message
+com.jme.network.rmi
+com.jme.network.serializing
+com.jme.network.serializing.serializers
+com.jme.network.service
+com.jme.network.service.rmi
+com.jme.network.service.rpc
+com.jme.network.service.rpc.msg
+com.jme.network.service.serializer
+com.jme.network.util

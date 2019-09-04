@@ -1,0 +1,130 @@
+//apply plugin:'application'
+
+if (!hasProperty('mainClass')) {
+    ext.mainClass = 'jmetest.TestChooser'
+}
+
+task run(dependsOn: 'build', type:JavaExec) {
+    main = mainClass
+    classpath = sourceSets.main.runtimeClasspath
+
+    if (System.properties['java.util.logging.config.file'] != null) {
+        systemProperty "java.util.logging.config.file", System.properties['java.util.logging.config.file']
+    }
+
+    if( assertions  == "true" ){
+        enableAssertions = true;
+    }
+}
+
+dependencies {
+    compile project(':jme-blender')
+    compile project(':jme-core')
+    compile project(':jme-desktop')
+    compile project(':jme-effects')
+
+    // EITHER use jme-bullet + jme-bullet-native OR ELSE jme-jbullet
+    compile project(':jme-bullet')
+    compile project(':jme-bullet-native')
+
+    compile project(':jme-jogg')
+    compile project(':jme-jogl')
+    compile project(':jme-lwjgl3')
+    compile project(':jme-networking')
+    compile project(':jme-niftygui')
+    compile project(':jme-plugins')
+    compile project(':jme-terrain')
+    compile project(':jme-testdata')
+}
+
+jar.doFirst{
+    manifest {
+        attributes('Manifest-Version'       : '1.0',
+//                'Created-By'             : vendor,
+//                'Specification-Title'    : appName,
+//                'Specification-Version'  : jmeVersion,
+//                'Specification-Vendor'   : "jMonkeyEngine",
+//                'Implementation-Title'   : appName,
+//                'Implementation-Version' : version,
+//                'Implementation-Vendor'  : vendor,
+                'Main-Class'             : getProperty('mainClass'),
+                // Add dependencies to manifest, remove version
+                'Class-Path'             : configurations.compile.resolvedConfiguration.resolvedArtifacts.collect {
+                                                        'lib/' +
+                                                        it.name +
+                                                        (it.classifier != null ? '-' + it.classifier : '') +
+                                                        '.' + it.extension }.join(' ')
+        )
+    }
+}
+
+task dist (dependsOn: ['build', ':jme-jogl:jar', ':jme-bullet:jar', ':jme-android:jar', \
+                       ':jme-android-native:jar', ':jme-bullet-native-android:jar', \
+                       ':jme-bullet-native:jar']) {
+    doLast {
+        // Copy all dependencies to ../dist/lib, remove versions from jar files
+        configurations.compile.resolvedConfiguration.resolvedArtifacts.each { artifact ->
+            copy {
+                from artifact.file
+                into '../dist/lib'
+                if(artifact.classifier != null){
+                    rename { "${artifact.name}-${artifact.classifier}.${artifact.extension}" }
+                } else{
+                    rename { "${artifact.name}.${artifact.extension}" }
+                }
+            }
+        }
+        copy {
+            from jar.archivePath
+            into '../dist'
+            rename { "jMonkeyEngine3.jar" }
+        }
+        // Copy JOGL packages, remove version
+        def config = project(':jme-jogl').configurations.runtime.copyRecursive({ !(it instanceof ProjectDependency); })
+        config.resolvedConfiguration.resolvedArtifacts.each {artifact ->
+            copy{
+                from artifact.file
+                into '../dist/opt/jogl/lib'
+                if(artifact.classifier != null){
+                    rename { "${artifact.name}-${artifact.classifier}.${artifact.extension}" }
+                } else{
+                    rename { "${artifact.name}.${artifact.extension}" }
+                }
+            }
+        }
+        copy {
+            from project(':jme-jogl').jar.archivePath
+            into '../dist/opt/jogl'
+            rename {project(':jme-jogl').name+".jar"}
+        }
+
+        // Copy bullet packages, remove version
+        copy {
+            from project(':jme-bullet').jar.archivePath
+            into '../dist/opt/native-bullet'
+            rename {project(':jme-bullet').name+".jar"}
+        }
+        copy {
+            from project(':jme-bullet-native').jar.archivePath
+            into '../dist/opt/native-bullet'
+            rename {project(':jme-bullet-native').name+".jar"}
+        }
+
+        // Copy android packages, remove version
+        copy {
+            from project(':jme-android').jar.archivePath
+            into '../dist/opt/android'
+            rename {project(':jme-android').name+".jar"}
+        }
+        copy {
+            from project(':jme-android-native').jar.archivePath
+            into '../dist/opt/android'
+            rename {project(':jme-android-native').name+".jar"}
+        }
+        copy {
+            from project(':jme-bullet-native-android').jar.archivePath
+            into '../dist/opt/native-bullet'
+            rename {project(':jme-bullet-native-android').name+".jar"}
+        }
+    }
+}

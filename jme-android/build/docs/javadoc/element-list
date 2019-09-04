@@ -1,0 +1,10 @@
+com.jme.app
+com.jme.app.state
+com.jme.asset.plugins
+com.jme.audio.android
+com.jme.audio.plugins
+com.jme.input.android
+com.jme.renderer.android
+com.jme.system.android
+com.jme.texture.plugins
+com.jme.util

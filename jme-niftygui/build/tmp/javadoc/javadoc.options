@@ -1,0 +1,22 @@
+-Xdoclint:none '-quiet'
+-author 
+-charset 'UTF-8'
+-classpath 'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-niftygui\\build\\classes\\java\\main;C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-niftygui\\build\\resources\\main;C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-core\\build\\libs\\jme-core-4.0.0-SNAPSHOT.jar;C:\\Users\\tlfal_000\\.gradle\\caches\\modules-2\\files-2.1\\com.github.nifty-gui\\nifty-default-controls\\1.4.3\\2ccafe0182a73da87657ca24b639b6e8c1accd50\\nifty-default-controls-1.4.3.jar;C:\\Users\\tlfal_000\\.gradle\\caches\\modules-2\\files-2.1\\com.github.nifty-gui\\nifty\\1.4.3\\fa9ac16e00d1b375d10f58d1c1eb576950ae8c9d\\nifty-1.4.3.jar;C:\\Users\\tlfal_000\\.gradle\\caches\\modules-2\\files-2.1\\com.github.nifty-gui\\nifty-style-black\\1.4.3\\c20a02dbdeb0bd9d2be258955fceb55c13185a8\\nifty-style-black-1.4.3.jar;C:\\Users\\tlfal_000\\.gradle\\caches\\modules-2\\files-2.1\\xpp3\\xpp3\\1.1.4c\\9b988ea84b9e4e9f1874e390ce099b8ac12cfff5\\xpp3-1.1.4c.jar;C:\\Users\\tlfal_000\\.gradle\\caches\\modules-2\\files-2.1\\com.google.code.findbugs\\jsr305\\2.0.2\\516c03b21d50a644d538de0f0369c620989cd8f0\\jsr305-2.0.2.jar'
+-d 'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-niftygui\\build\\docs\\javadoc'
+-doctitle 'jMonkeyEngine 4.0 jme-niftygui Javadoc'
+-encoding 'UTF-8'
+-header '<b>jMonkeyEngine 4.0 jme-niftygui</b>'
+-protected 
+-quiet 
+-use 
+-windowtitle 'jMonkeyEngine 4.0 jme-niftygui Javadoc'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-niftygui\\src\\main\\java\\com\\jme\\cinematic\\events\\GuiEvent.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-niftygui\\src\\main\\java\\com\\jme\\cinematic\\events\\GuiTrack.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-niftygui\\src\\main\\java\\com\\jme\\niftygui\\InputSystemJme.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-niftygui\\src\\main\\java\\com\\jme\\niftygui\\JmeBatchRenderBackend.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-niftygui\\src\\main\\java\\com\\jme\\niftygui\\NiftyJmeDisplay.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-niftygui\\src\\main\\java\\com\\jme\\niftygui\\RenderDeviceJme.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-niftygui\\src\\main\\java\\com\\jme\\niftygui\\RenderFontJme.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-niftygui\\src\\main\\java\\com\\jme\\niftygui\\RenderImageJme.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-niftygui\\src\\main\\java\\com\\jme\\niftygui\\SoundDeviceJme.java'
+'C:\\Users\\tlfal_000\\Desktop\\jme4\\jme-niftygui\\src\\main\\java\\com\\jme\\niftygui\\SoundHandleJme.java'

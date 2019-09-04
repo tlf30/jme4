@@ -1,0 +1,32 @@
+MaterialDef Depth Of Field {
+
+    MaterialParameters {
+        Int NumSamples
+        Int NumSamplesDepth
+        Texture2D Texture
+        Texture2D DepthTexture
+        Float FocusRange;
+        Float FocusDistance;
+        Float XScale;
+        Float YScale;
+        Float BlurThreshold : 0.2;
+        Boolean DebugUnfocus : false;
+    }
+
+    Technique {
+        VertexShader GLSL150 GLSL100:   Common/MatDefs/Post/Post.vert
+        FragmentShader GLSL150 GLSL100: Common/MatDefs/Post/DepthOfField.frag
+
+        WorldParameters {
+            FrustumNearFar
+        }
+        
+        Defines {
+            RESOLVE_MS : NumSamples
+            RESOLVE_DEPTH_MS : NumSamplesDepth
+            BLUR_THRESHOLD : BlurThreshold
+            DEBUG_UNFOCUS : DebugUnfocus
+        }
+    }
+
+}

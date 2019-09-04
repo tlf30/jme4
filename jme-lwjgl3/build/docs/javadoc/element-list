@@ -1,0 +1,8 @@
+com.jme.audio.lwjgl
+com.jme.input.lwjgl
+com.jme.lwjgl3.utils
+com.jme.opencl.lwjgl
+com.jme.opencl.lwjgl.info
+com.jme.renderer.lwjgl
+com.jme.system.lwjgl
+com.jme.util

@@ -1,0 +1,13 @@
+com.jme.bullet
+com.jme.bullet.animation
+com.jme.bullet.collision
+com.jme.bullet.collision.shapes
+com.jme.bullet.collision.shapes.infos
+com.jme.bullet.control
+com.jme.bullet.control.ragdoll
+com.jme.bullet.debug
+com.jme.bullet.joints
+com.jme.bullet.joints.motors
+com.jme.bullet.objects
+com.jme.bullet.objects.infos
+com.jme.bullet.util

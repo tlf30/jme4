@@ -1,0 +1,8 @@
+if (!hasProperty('mainClass')) {
+    ext.mainClass = ''
+}
+
+dependencies {
+    compile project(':jme-core')
+    compile 'de.jarnbjo:j-ogg-all:1.0.0'
+}

@@ -1,0 +1,34 @@
+if (!hasProperty('mainClass')) {
+    ext.mainClass = ''
+}
+
+def lwjglVersion = '3.2.1'
+
+sourceCompatibility = '1.8'
+
+dependencies {
+    compile project(':jme-core')
+    compile project(':jme-desktop')
+
+    compile "org.lwjgl:lwjgl:${lwjglVersion}"
+    compile "org.lwjgl:lwjgl-glfw:${lwjglVersion}"
+    compile "org.lwjgl:lwjgl-jemalloc:${lwjglVersion}"
+    compile "org.lwjgl:lwjgl-openal:${lwjglVersion}"
+    compile "org.lwjgl:lwjgl-opencl:${lwjglVersion}"
+    compile "org.lwjgl:lwjgl-opengl:${lwjglVersion}"
+    runtime "org.lwjgl:lwjgl:${lwjglVersion}:natives-windows"
+    runtime "org.lwjgl:lwjgl:${lwjglVersion}:natives-linux"
+    runtime "org.lwjgl:lwjgl:${lwjglVersion}:natives-macos"
+    runtime "org.lwjgl:lwjgl-glfw:${lwjglVersion}:natives-windows"
+    runtime "org.lwjgl:lwjgl-glfw:${lwjglVersion}:natives-linux"
+    runtime "org.lwjgl:lwjgl-glfw:${lwjglVersion}:natives-macos"
+    runtime "org.lwjgl:lwjgl-jemalloc:${lwjglVersion}:natives-windows"
+    runtime "org.lwjgl:lwjgl-jemalloc:${lwjglVersion}:natives-linux"
+    runtime "org.lwjgl:lwjgl-jemalloc:${lwjglVersion}:natives-macos"
+    runtime "org.lwjgl:lwjgl-opengl:${lwjglVersion}:natives-windows"
+    runtime "org.lwjgl:lwjgl-opengl:${lwjglVersion}:natives-linux"
+    runtime "org.lwjgl:lwjgl-opengl:${lwjglVersion}:natives-macos"
+    runtime "org.lwjgl:lwjgl-openal:${lwjglVersion}:natives-windows"
+    runtime "org.lwjgl:lwjgl-openal:${lwjglVersion}:natives-linux"
+    runtime "org.lwjgl:lwjgl-openal:${lwjglVersion}:natives-macos"
+}

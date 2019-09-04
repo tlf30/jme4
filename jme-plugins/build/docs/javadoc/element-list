@@ -1,0 +1,16 @@
+com.jme.export.xml
+com.jme.material.plugin.export.material
+com.jme.material.plugin.export.materialdef
+com.jme.scene.plugins
+com.jme.scene.plugins.fbx
+com.jme.scene.plugins.fbx.anim
+com.jme.scene.plugins.fbx.file
+com.jme.scene.plugins.fbx.material
+com.jme.scene.plugins.fbx.mesh
+com.jme.scene.plugins.fbx.misc
+com.jme.scene.plugins.fbx.node
+com.jme.scene.plugins.fbx.obj
+com.jme.scene.plugins.fbx.objects
+com.jme.scene.plugins.gltf
+com.jme.scene.plugins.ogre
+com.jme.scene.plugins.ogre.matext

@@ -1,0 +1,18 @@
+MaterialDef Tex3DThumb {
+
+    MaterialParameters {
+        Texture3D Texture
+        Int Rows;
+        Float InvDepth;
+    }
+
+    Technique {
+        VertexShader GLSL100:   jmetest/texture/tex3DThumb.vert
+        FragmentShader GLSL100: jmetest/texture/tex3DThumb.frag
+
+        WorldParameters {
+            WorldViewProjectionMatrix
+        }
+    }
+
+}
