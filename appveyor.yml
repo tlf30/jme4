@@ -3,11 +3,11 @@ version: 1.0.{build}.{branch}
 branches:
   only:
   - master
-  - v3.2
+  - v4.0
 
 only_commits:
   files:
-    - jme3-bullet-native/
+    - jme-bullet-native/
     - appveyor.yml
     - gradle.properties
 
@@ -37,7 +37,7 @@ build_script:
 cache:
 - C:\Users\appveyor\.gradle\caches
 - C:\Users\appveyor\.gradle\wrapper
-- jme3-bullet-native\bullet3.zip -> gradle.properties
+- jme-bullet-native\bullet3.zip -> gradle.properties
 
 test: off
 deploy: off
@@ -54,7 +54,7 @@ on_success:
 
     git checkout -q %APPVEYOR_REPO_BRANCH%
 
-    git add -- jme3-bullet-native/libs/native/windows/
+    git add -- jme-bullet-native/libs/native/windows/
 
     git commit -m "[ci skip] bullet: update windows natives"
 

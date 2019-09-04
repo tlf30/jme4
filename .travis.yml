@@ -11,10 +11,6 @@ branches:
 matrix:
   include:
   - os: linux
-    jdk: oraclejdk8
-    dist: precise
-    env: UPLOAD=true UPLOAD_NATIVE=true
-  - os: linux
     jdk: openjdk11
     dist: xenial
   - os: osx
